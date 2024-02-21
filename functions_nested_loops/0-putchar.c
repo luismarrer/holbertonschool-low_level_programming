@@ -1,4 +1,4 @@
-#include  <stdio.h>
+#include "main.h"
 
 /**
  * main - print _putchar
@@ -9,7 +9,14 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	char *str = "_putchar";
+
+	while (*str)
+	{
+		_putchar(*str++);
+	}
+	_putchar('\n');
 
 	return (0);
 }
+
