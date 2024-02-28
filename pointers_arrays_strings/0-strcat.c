@@ -3,11 +3,12 @@
 /**
  * _strcat - Write a function that concatenates two strings.
  *
- * @dest:
- * @src:
+ * @dest: destiny
+ * @src: source
  *
- * Return:
+ * Return: destiny with source
  */
+
 char *_strcat(char *dest, char *src)
 
 {
