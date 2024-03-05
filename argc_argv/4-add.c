@@ -7,6 +7,7 @@
  *
  * Return: the int converted from the string
  */
+
 int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
@@ -53,6 +54,7 @@ int _atoi(char *s)
  *
  * Return: 0 (Success), or 1 (Success)
  */
+
 int main(int argc, char *argv[])
 {
 	int sum, num, i, j, k;
