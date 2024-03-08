@@ -67,7 +67,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	new_str[total_len] = '\0';
 
-    return (new_str);
+	return (new_str);
 
 }
 
