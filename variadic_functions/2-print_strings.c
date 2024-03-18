@@ -22,21 +22,19 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (loop = 0; loop < n; loop++)
 	{
-		if (str != NULL)
-		{
-			printf("%s", va_arg(str, char *));
-		}
+		char *loqhay = va_arg(str, char *);
 
-		else
+		if (loqhay == NULL)
 		{
 			printf("(nil)");
 		}
 
-		if (loop == (n - 1))
+		else
 		{
-			continue;
+			printf("%s", loqhay);
 		}
-		if (separator != NULL)
+
+		if (separator != NULL && loop < (n - 1))
 		{
 		printf("%s", separator);
 		}
