@@ -62,11 +62,9 @@ void print_string(char *separator, va_list arg)
 	{
 		printf("%s(nil)", separator);
 	}
-
-	else
-	{
+	
 	printf("%s%s", separator, str);
-	}
+	
 }
 
 /**
