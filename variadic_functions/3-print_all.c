@@ -61,10 +61,11 @@ void print_string(char *separator, va_list arg)
 	if (str == NULL)
 	{
 		printf("%s(nil)", separator);
+		return;
 	}
-	
+
 	printf("%s%s", separator, str);
-	
+
 }
 
 /**
