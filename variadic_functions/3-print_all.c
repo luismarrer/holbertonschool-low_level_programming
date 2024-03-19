@@ -18,7 +18,7 @@ void print_char(char *separator, va_list arg)
 /**
  * print_int - print integer.
  *
- * @separtor: string.
+ * @separator: string.
  *
  * @arg: Argument to print.
  */
@@ -60,10 +60,13 @@ void print_string(char *separator, va_list arg)
 
 	if (str == NULL)
 	{
-		printf("(nil)");
+		printf("%s(nil)", separator);
 	}
-	printf("%s%s", separator, str);
 
+	else
+	{
+	printf("%s%s", separator, str);
+	}
 }
 
 /**
@@ -94,9 +97,9 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 
-		while(j < 4)
+		while (j < 4)
 		{
-			if(format[i] == formatos[j].format[0])
+			if (format[i] == formatos[j].format[0])
 			{
 				formatos[j].function(separator, arg);
 				separator = ", ";
