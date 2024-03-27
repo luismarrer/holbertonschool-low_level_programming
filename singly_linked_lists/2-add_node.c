@@ -9,7 +9,6 @@
  * @str: The string to be added to the list.
  *
  * Return: The address of the new element, or NULL if it failed.
- *
  */
 
 list_t *add_node(list_t **head, const char *str)
